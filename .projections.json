@@ -1,0 +1,8 @@
+{
+    "*.tsx": {
+        "alternate": "{}.css"
+    },
+    "*.css": {
+        "alternate": "{}.tsx"
+    }
+}

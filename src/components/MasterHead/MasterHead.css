@@ -1,0 +1,11 @@
+.image-background {
+    background-image: url("/images/background-view.jpg");
+}
+
+.main-avatar {
+    background-image: url("/images/main-avatar.jpg");
+}
+
+.image-cover {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1))
+}
