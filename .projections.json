@@ -1,8 +1,13 @@
 {
+    "*": {
+        "start": "npm run dev"
+    },
     "*.tsx": {
+        "start": "npm run dev",
         "alternate": "{}.css"
     },
     "*.css": {
+        "start": "npm run dev",
         "alternate": "{}.tsx"
     }
 }
