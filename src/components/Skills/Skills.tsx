@@ -91,7 +91,7 @@ function Skills() {
   return (
     <div className="p-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 polygon-background bg-cover">
       {skills.map((skill) => (
-        <Skill {...skill} />
+        <Skill key={skill.title} {...skill} />
       ))}
     </div>
   );
