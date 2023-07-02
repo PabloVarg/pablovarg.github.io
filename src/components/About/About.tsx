@@ -4,7 +4,7 @@ import Badge from "../Base/Badge";
 
 function About() {
   return (
-    <div className="bg-blue-dark p-20 flex flex-col md:flex-row items-center justify-center gap-x-16 gap-y-8">
+    <div className="bg-blue-dark py-5 md:p-20 flex flex-col md:flex-row items-center justify-center gap-x-16 gap-y-8">
       <PresentingImage />
       <AboutText />
     </div>
