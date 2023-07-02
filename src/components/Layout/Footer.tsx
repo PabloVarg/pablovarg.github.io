@@ -5,7 +5,7 @@ import Badge from "../Base/Badge";
 
 function Footer() {
   return (
-    <div className="flex flex-row justify-center items-center p-6 gap-x-5">
+    <div className="flex flex-row justify-center items-center p-6 gap-x-10">
       <GithubBadge />
       <EmailBadge />
       <LinkedinBadge />
