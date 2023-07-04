@@ -55,7 +55,7 @@ function EmailBadge() {
   return (
     <Badge
       icon={<MdEmail className="text-yellow-light w-16 h-16" />}
-      to="emailto:pvarber@outlook.es"
+      to="emailto:pvarber@gmail.com"
     />
   );
 }
