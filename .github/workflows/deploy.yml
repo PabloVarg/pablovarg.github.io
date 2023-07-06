@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20.x
+      - name: Run clean install
+        run: npm clean-install
+      - name: Run build
+        run: npm run build
+      - name: Add .nojekyll file
+        run: touch ./dist/.nojekyll
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: static-files
+          folder: dist
+          clean-exclude: |
+            CNAME
+            .nojekyll
