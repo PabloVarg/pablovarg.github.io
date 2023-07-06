@@ -15,7 +15,7 @@ function PresentingImage() {
   return (
     <img
       src="/images/about-avatar.jpeg"
-      className="w-1/2 md:w-1/3 border-2 border-black rounded-xl bg-left-bottom"
+      className="w-1/2 md:w-1/3 border-2 border-yellow-light rounded-xl bg-left-bottom"
     />
   );
 }
