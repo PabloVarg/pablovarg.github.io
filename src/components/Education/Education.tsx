@@ -56,7 +56,7 @@ function Education() {
   return (
     <div className="education-background min-h-screen md:h-screen bg-fixed bg-no-repeat bg-right-top">
       <div className="image-cover-left w-auto min-h-screen md:h-screen grid grid-cols-1 lg:grid-cols-3">
-        <div className="bg-blue-dark flex flex-col drop-shadow-xl col-span-2 p-16 pb-0 md:m-24 md:p-20 md:pb-0 lg:mr-0 overflow-hidden">
+        <div className="bg-blue-dark flex flex-col drop-shadow-xl col-span-2 p-16 md:m-24 md:p-20 md:pb-0 lg:mr-0 overflow-hidden">
           <div>
             <h2 className="text-yellow-light text-xl text-center">
               Pablo Vargas Bermúdez
