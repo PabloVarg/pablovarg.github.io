@@ -23,7 +23,7 @@ function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="flex flex-col py-2 backdrop-blur-md px-14 fixed bg-black/30 w-full z-50">
+    <nav className="flex flex-col py-2 backdrop-blur-md px-2 sm:px-6 fixed bg-black/30 w-full z-50">
       <div className="flex items-center justify-between">
         <HomeNavLink />
         <NavMenuButton
