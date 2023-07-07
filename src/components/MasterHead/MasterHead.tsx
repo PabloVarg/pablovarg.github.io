@@ -14,7 +14,7 @@ function MasterHead() {
 
         <CgChevronDown
           className="absolute bottom-2 animate-bounce text-yellow-light"
-          size="3rem"
+          size="2rem"
         />
       </div>
     </div>
