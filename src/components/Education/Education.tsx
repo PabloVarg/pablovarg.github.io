@@ -72,7 +72,7 @@ function Education() {
             </p>
           </div>
 
-          <div className="flex flex-col flex-wrap flex-auto justify-center items-center">
+          <div className="flex flex-col gap-2 flex-wrap flex-auto justify-center items-center">
             {degrees.map((degree: Degree) => (
               <EducationBadge
                 key={degree.degree}
@@ -100,9 +100,9 @@ function EducationBadge({
   selectBadge,
 }: EducationBadgeProps) {
   return (
-    <div
+    <button
       onClick={selectBadge}
-      className="bg-black text-yellow-light border border-yellow-light p-4 w-full cursor-pointer"
+      className="bg-black text-yellow-light border border-yellow-light p-4 w-full rounded-none"
     >
       <h2 className="text-yellow-light text-xl text-center">{degree}</h2>
       <h3 className="text-center">{institution}</h3>
@@ -133,7 +133,7 @@ function EducationBadge({
           <img className="max-w-full h-24" src={image} />
         </div>
       </div>
-    </div>
+    </button>
   );
 }
 
