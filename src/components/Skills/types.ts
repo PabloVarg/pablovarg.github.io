@@ -1,6 +1,8 @@
+import { ReactNode } from "react";
+
 export interface Skill {
   title: string;
-  imgSrc: string;
+  imageIcon: ReactNode;
   description: string;
 }
 
