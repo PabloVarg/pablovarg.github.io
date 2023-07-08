@@ -8,7 +8,7 @@ function MasterHead() {
       <div className="image-cover w-auto h-screen bg-fixed flex flex-col justify-center items-center gap-7">
         <Avatar />
 
-        <AttachmentLink type="primary" toFile="/pdf/cv.pdf">
+        <AttachmentLink type="primary" toFile="/pdfs/cv.pdf">
           Resume <CgAttachment color="white" />
         </AttachmentLink>
 
