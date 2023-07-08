@@ -95,7 +95,7 @@ function EducationBadge({
       <div
         className={twMerge(
           "flex items-center justify-center mt-3 transform rotate-0 duration-150 transition-transform",
-          isSelected && "rotate-180"
+          isSelected && "rotate-180",
         )}
       >
         <HiOutlineChevronDown className="w-5 h-5 inline" />
@@ -103,15 +103,14 @@ function EducationBadge({
 
       <div
         className={twMerge(
-          "grid grid-cols-3 gap-3 mt-3 max-h-0 transition-[max-height] ease-in-out duration-150 overflow-hidden",
-          isSelected && "max-h-40"
+          "flex flex-col items-center justify-center sm:grid sm:grid-cols-3 gap-3 mt-3 max-h-0 transition-[max-height] ease-in-out duration-150 overflow-hidden",
+          isSelected && "max-h-96 sm:max-h-40",
         )}
       >
         <div className="col-span-2">
           <span className="text-center block">{cursedDates}</span>
           <span className="flex flex-col my-2 sm:flex-row justify-between items-center">
-            <span>Translated GPA: {gpa.toFixed(1)}</span>{" "}
-            <span>{score}/100</span>
+            <span>GPA: {gpa.toFixed(1)}</span> <span>{score}/100</span>
           </span>
           <span className="block text-center underline">{remarks}</span>
         </div>
