@@ -1,10 +1,5 @@
 import { twMerge } from "tailwind-merge";
-
-interface CompanyBannerProps {
-  src: string;
-
-  className?: string;
-}
+import { CompanyBannerProps } from "./types";
 
 function Companies() {
   return (

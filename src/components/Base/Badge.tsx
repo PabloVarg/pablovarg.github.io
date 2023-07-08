@@ -1,9 +1,4 @@
-import { ReactNode } from "react";
-
-interface BadgeProps {
-  icon: ReactNode;
-  to: string;
-}
+import { BadgeProps } from "./types";
 
 function Badge({ icon, to }: BadgeProps) {
   return (

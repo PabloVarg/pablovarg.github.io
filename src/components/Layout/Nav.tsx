@@ -1,23 +1,6 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-
-interface NavLinkProps {
-  children: React.ReactNode;
-  type?: "primary" | "secondary";
-  className?: string;
-  onClick?(): void;
-  href?: string;
-}
-
-interface NavButtonProps {
-  open: boolean;
-  onClick(): void;
-}
-
-interface NavMenuItemsProps {
-  isMenuOpen: boolean;
-  closeMenu(): void;
-}
+import { NavButtonProps, NavLinkProps, NavMenuItemsProps } from "./types";
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

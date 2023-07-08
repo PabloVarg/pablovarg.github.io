@@ -1,14 +1,5 @@
-import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
-
-interface AttachmentLinkProps {
-  type: "primary" | "secondary";
-  children: ReactNode;
-  toFile: string;
-
-  className?: string;
-  target?: string;
-}
+import { AttachmentLinkProps } from "./types";
 
 function AttachmentLink(props: AttachmentLinkProps) {
   return (

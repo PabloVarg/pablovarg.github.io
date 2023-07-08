@@ -1,13 +1,5 @@
-import { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
-
-interface ButtonProps {
-  type: "primary" | "secondary";
-  children: ReactNode;
-
-  onClick?(): void;
-  className?: string;
-}
+import { ButtonProps } from "./types";
 
 function Button(props: ButtonProps) {
   return (

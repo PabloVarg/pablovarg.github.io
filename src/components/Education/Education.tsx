@@ -1,22 +1,8 @@
 import { useState } from "react";
-import "./Education.css";
-import { HiOutlineChevronDown } from "react-icons/hi";
 import { twMerge } from "tailwind-merge";
-
-interface Degree {
-  institution: string;
-  cursedDates: string;
-  degree: string;
-  gpa: number;
-  score: number;
-  remarks: string;
-  image: string;
-}
-
-interface EducationBadgeProps extends Degree {
-  isSelected: boolean;
-  selectBadge(): void;
-}
+import { HiOutlineChevronDown } from "react-icons/hi";
+import "./Education.css";
+import { Degree, EducationBadgeProps } from "./types";
 
 let degrees: Array<Degree> = [
   {

@@ -1,10 +1,6 @@
-interface SkillProps {
-  title: string;
-  imgSrc: string;
-  description: string;
-}
+import { Skill, SkillProps } from "./types";
 
-let skills: Array<SkillProps> = [
+let skills: Array<Skill> = [
   {
     title: "Java",
     imgSrc:
