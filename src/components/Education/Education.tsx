@@ -40,7 +40,10 @@ function Education() {
   };
 
   return (
-    <div className="education-background min-h-screen md:h-screen bg-fixed bg-no-repeat bg-right-top">
+    <div
+      id="Education"
+      className="education-background min-h-screen md:h-screen bg-fixed bg-no-repeat bg-right-top"
+    >
       <div className="image-cover-left w-auto min-h-screen md:h-screen grid grid-cols-1 lg:grid-cols-3">
         <div className="bg-blue-dark flex flex-col drop-shadow-xl col-span-2 p-16 md:mx-24 md:my-10 lg:m-24 md:p-20 md:pb-0 lg:mr-0 overflow-hidden">
           <div>

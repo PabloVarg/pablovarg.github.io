@@ -4,7 +4,10 @@ import AttachmentLink from "../Base/AttachmentLink";
 
 function MasterHead() {
   return (
-    <div className="image-background h-screen bg-fixed bg-no-repeat bg-cover bg-center">
+    <div
+      id="MasterHead"
+      className="image-background h-screen bg-fixed bg-no-repeat bg-cover bg-center"
+    >
       <div className="image-cover w-auto h-screen bg-fixed flex flex-col justify-center items-center gap-7">
         <Avatar />
 

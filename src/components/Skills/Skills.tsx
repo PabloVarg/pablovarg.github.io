@@ -97,7 +97,10 @@ function Skills() {
   const [showAll, toggleShowAll] = useReducer((state) => !state, false);
 
   return (
-    <div className="p-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 polygon-background bg-cover">
+    <div
+      id="Skills"
+      className="p-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 polygon-background bg-cover"
+    >
       {skills
         .slice(0, showAll ? skills.length : itemsInShortView - 1)
         .map((skill) => (

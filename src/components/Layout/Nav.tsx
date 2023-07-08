@@ -1,6 +1,16 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { NavButtonProps, NavLinkProps, NavMenuItemsProps } from "./types";
+import {
+  HomeNavLinkProps,
+  NavButtonProps,
+  NavLinkProps,
+  NavMenuItemsProps,
+} from "./types";
+
+const scrollToElement = (id: string, callback: () => void) => () => {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  callback();
+};
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +18,7 @@ function Nav() {
   return (
     <nav className="flex flex-col py-2 backdrop-blur-md px-2 sm:px-6 fixed bg-black/30 w-full z-50">
       <div className="flex items-center justify-between">
-        <HomeNavLink />
+        <HomeNavLink closeMenu={() => setIsMenuOpen(false)} />
         <NavMenuButton
           open={isMenuOpen}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -23,20 +33,20 @@ function Nav() {
   );
 }
 
-function HomeNavLink() {
+function HomeNavLink({ closeMenu }: HomeNavLinkProps) {
   return (
     <>
       <NavLink
         type="primary"
         className="hidden sm:block"
-        onClick={() => window.scrollTo(0, 0)}
+        onClick={scrollToElement("MasterHead", closeMenu)}
       >
         <span>Pablo Vargas Bermúdez</span>
       </NavLink>
       <NavLink
         type="primary"
         className="sm:hidden"
-        onClick={() => window.scrollTo(0, 0)}
+        onClick={scrollToElement("MasterHead", closeMenu)}
       >
         <span>Pablo Vargas</span>
       </NavLink>
@@ -51,14 +61,20 @@ function NavMenuItems({ isMenuOpen, closeMenu }: NavMenuItemsProps) {
 
   const className = "hover:text-xl transition";
 
+  const scrollTo = (id: string) => scrollToElement(id, closeMenu);
+
   return (
     <>
       <div className="flex justify-center flex-col items-center p-4 pt-8 gap-4 z-10">
-        <NavLink className={className}>About</NavLink>
-        <NavLink className={className}>Experience</NavLink>
-        <NavLink className={className}>Skills</NavLink>
-        <NavLink className={className}>Projects</NavLink>
-        <NavLink className={className}>Contact</NavLink>
+        <NavLink className={className} onClick={scrollTo("About")}>
+          About
+        </NavLink>
+        <NavLink className={className} onClick={scrollTo("Skills")}>
+          Skills
+        </NavLink>
+        <NavLink className={className} onClick={scrollTo("Education")}>
+          Education
+        </NavLink>
       </div>
 
       <div

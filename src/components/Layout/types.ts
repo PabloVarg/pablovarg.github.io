@@ -19,3 +19,7 @@ export interface NavMenuItemsProps {
   isMenuOpen: boolean;
   closeMenu(): void;
 }
+
+export interface HomeNavLinkProps {
+  closeMenu(): void;
+}
