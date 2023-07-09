@@ -1,0 +1,76 @@
+.experience-background {
+    background-image: url("/images/experience-background.webp");
+}
+
+.image-reverse-cover {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4))
+}
+
+.vertical-timeline-element-content h2 {
+    @apply text-yellow-light text-xl
+}
+
+.vertical-timeline-element-content h3 {
+    @apply text-yellow-light
+}
+
+.vertical-timeline-element-content p {
+    @apply text-justify
+}
+
+.vertical-timeline-element-content-arrow {
+    @apply border-r-blue-dark
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-icon {
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    @apply flex items-center justify-center bg-white shadow-none -translate-y-2
+}
+
+.vertical-timeline-element-date {
+    @apply text-yellow-light mx-5
+}
+
+.vertical-timeline-element-content {
+    border-top: 2px solid;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    @apply border-yellow-light bg-blue-dark rounded-none
+}
+
+.vertical-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 2px;
+    @apply bg-yellow-light
+}
+
+@media only screen and (max-width: 1170px) {
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        text-align: right;
+        width: 100%;
+        margin-bottom: -12px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        width: 60px;
+        height: 60px;
+        margin-left: -15px;
+        @apply flex items-center justify-center bg-white shadow-none
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
