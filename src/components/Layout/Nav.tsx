@@ -75,6 +75,9 @@ function NavMenuItems({ isMenuOpen, closeMenu }: NavMenuItemsProps) {
         <NavLink className={className} onClick={scrollTo("Education")}>
           Education
         </NavLink>
+        <NavLink className={className} onClick={scrollTo("Projects")}>
+          Projects
+        </NavLink>
       </div>
 
       <div
