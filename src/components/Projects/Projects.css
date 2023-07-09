@@ -1,0 +1,7 @@
+.project-cover {
+    background: rgba(0, 0, 0, .6)
+}
+
+.project-cover:hover {
+    background: rgba(0, 0, 0, .4)
+}
