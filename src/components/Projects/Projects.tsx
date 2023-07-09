@@ -29,7 +29,7 @@ let projects: Array<Project> = [
     title: "Weather Classifier",
     description:
       "This CLI application made with the curses library allows to classify different regions in the planet into certain climates with help of prolog and some predefined rules",
-    imageURL: "/images/projects/automaton.webp",
+    imageURL: "/images/projects/weather.webp",
     repoURL: "https://github.com/Pabloitl/prolog-project",
   },
   {
