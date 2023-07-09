@@ -50,14 +50,14 @@ let projects: Array<Project> = [
 
 function Projects() {
   return (
-    <div id="Projects">
-      <div className="px-5 py-20 md:p-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 polygon-background bg-cover">
+    <div id="Projects" className="px-5 py-20 md:p-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 polygon-background bg-cover">
         {projects.map((project: Project) => (
           <Project key={project.repoURL} {...project} />
         ))}
       </div>
 
-      <div className="flex flex-col gap-5 items-center justify-center">
+      <div className="flex flex-col gap-5 pt-5 items-center justify-center">
         <h2 className="text-3xl text-center">To see more of my projects ...</h2>
         <GithubBadge />
       </div>
