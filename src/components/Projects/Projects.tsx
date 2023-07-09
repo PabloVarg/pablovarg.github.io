@@ -51,7 +51,7 @@ let projects: Array<Project> = [
 function Projects() {
   return (
     <div id="Projects">
-      <div className="p-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 polygon-background bg-cover">
+      <div className="px-5 py-20 md:p-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 polygon-background bg-cover">
         {projects.map((project: Project) => (
           <Project key={project.repoURL} {...project} />
         ))}
@@ -70,11 +70,14 @@ function Project({ title, description, imageURL, repoURL }: ProjectProps) {
     <a
       href={repoURL}
       target="_blank"
-      className="relative aspect-[4/3] sepia hover:sepia-0 cursor-pointer"
+      className="relative aspect-[4/3] sepia hover:sepia-0 cursor-pointer overflow-hidden"
     >
-      <img src={imageURL} className="absolute object-cover aspect-[4/3]" />
+      <img
+        src={imageURL}
+        className="absolute object-cover aspect-[4/3] w-full"
+      />
 
-      <div className="absolute project-cover flex flex-col items-center justify-center p-12 gap-5 w-full h-full">
+      <div className="absolute project-cover flex flex-col items-center justify-center px-2 md:p-12 gap-5 w-full h-full">
         <h2 className="text-yellow-light text-xl">{title}</h2>
         <p className="text-white">{description}</p>
       </div>
