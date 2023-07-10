@@ -110,7 +110,7 @@ function Experience() {
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            date="Jan 2022 - Jun 2022"
+            date="Jan 2022 - Mar 2022"
             icon={<img className="w-20" src="/images/companies/tecnm.webp" />}
           >
             <h2>Tecnológico Nacional de México (TecNM)</h2>
