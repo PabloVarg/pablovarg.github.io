@@ -40,7 +40,7 @@ function Avatar() {
           <span>Pablo Vargas Bermúdez</span>
         </h1>
         <h2 className="text-yellow-light text-lg">
-          Software Engineer - Backend - AI/ML
+          Backend - Software Engineer - AI/ML
         </h2>
       </div>
     </>
