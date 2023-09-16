@@ -1,13 +1,13 @@
 {
     "*": {
-        "start": "npm run dev"
+        "start": "bun run dev"
     },
     "*.tsx": {
-        "start": "npm run dev",
+        "start": "bun run dev",
         "alternate": "{}.css"
     },
     "*.css": {
-        "start": "npm run dev",
+        "start": "bun run dev",
         "alternate": "{}.tsx"
     }
 }
