@@ -29,7 +29,7 @@ function EmailBadge() {
   return (
     <Badge
       icon={<MdEmail className="text-yellow-light w-16 h-16" />}
-      to="emailto:pvarber@gmail.com"
+      to="emailto:pvargasb@proton.me"
     />
   );
 }
